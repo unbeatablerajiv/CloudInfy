@@ -1,7 +1,7 @@
 import { Blocks, Cable, ChartNoAxesCombined, CloudCog, CodeXml, DatabaseZap, Headphones, LayoutDashboard, Settings2, Sparkles, UsersRound, Workflow } from 'lucide-react';
 
 export const services = [
-  { icon: CloudCog, title: 'Salesforce Consultingss', text: 'Turn business goals into a practical platform roadmap, architecture, and adoption plan.' },
+  { icon: CloudCog, title: 'Salesforce Consulting', text: 'Turn business goals into a practical platform roadmap, architecture, and adoption plan.' },
   { icon: Blocks, title: 'Implementation', text: 'Launch a clean, scalable Salesforce org shaped around the way your teams actually work.' },
   { icon: Settings2, title: 'Customization', text: 'Configure objects, permissions, workflows, and experiences without adding needless complexity.' },
   { icon: CodeXml, title: 'Custom Development', text: 'Build reliable Apex, Lightning Web Components, and purpose-made business applications.' },
