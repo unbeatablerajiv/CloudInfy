@@ -6,7 +6,7 @@ export const services = [
   { icon: Settings2, title: 'Customization', text: 'Configure objects, permissions, workflows, and experiences without adding needless complexity.' },
   { icon: CodeXml, title: 'Custom Development', text: 'Build reliable Apex, Lightning Web Components, and purpose-made business applications.' },
   { icon: Cable, title: 'Integrations', text: 'Connect Salesforce to the tools and data your teams depend on through secure APIs.' },
-  { icon: UsersRound, title: 'Sales & Service Cloud', text: 'Create a connected customer journey—from pipeline visibility to responsive case management.' },
+  { icon: UsersRound, title: 'All Salesforce Clouds', text: 'Connect sales, service, marketing, commerce, data, and operations on a Salesforce platform built around your business.' },
   { icon: Workflow, title: 'Process Automation', text: 'Remove repetitive work with maintainable flows, approvals, notifications, and intelligent routing.' },
   { icon: DatabaseZap, title: 'Data Migration', text: 'Clean, map, validate, and move business-critical data with confidence and traceability.' },
   { icon: Headphones, title: 'Support & Maintenance', text: 'Keep your platform healthy, secure, and improving through responsive ongoing support.' },
@@ -20,10 +20,10 @@ export const solutions = [
 
 // Verified on the legacy CloudInfy website. Replace monograms with supplied logo files when available.
 export const clients = [
-  { name: 'Clarity Consulting Group', mark: 'CCG' },
-  { name: 'iTech Software Solutions', mark: 'iT' },
-  { name: 'VYMO', mark: 'VYMO' },
-  { name: 'WOW', mark: 'WOW' },
+  { name: 'Clarity Consulting Group', logo: 'clarity' },
+  { name: 'iTech Software Solutions', logo: 'itech' },
+  { name: 'Vymo', logo: 'vymo' },
+  { name: 'WOW Detailing Studio', logo: 'wow' },
 ];
 
 // Placeholder copy: replace with approved customer quotes before publishing as testimonials.

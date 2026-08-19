@@ -2,11 +2,19 @@ import { ArrowRight, ArrowUpRight, Check, ChevronRight, CircleCheck, Mail, MapPi
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
 import AssistantWidget from './components/AssistantWidget';
+import wowDetailingLogo from './assets/wow-detailing-logo.jpg';
 import { clients, services, solutions, testimonials } from './data/siteData';
 
 const Linkedin = () => <span aria-hidden="true" style={{fontWeight:800,fontSize:13}}>in</span>;
 
 const SectionHead = ({eyebrow,title,text}) => <div className="section-head"><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{text && <p>{text}</p>}</div>;
+
+const ClientLogo = ({type}) => {
+  if (type === 'clarity') return <div className="client-logo clarity-logo"><span>CLARITY</span><small>CONSULTING GROUP</small></div>;
+  if (type === 'itech') return <div className="client-logo itech-logo"><span><i>i</i>TECH</span><small>SOFTWARE SOLUTIONS</small></div>;
+  if (type === 'vymo') return <div className="client-logo vymo-logo"><i/><span>vymo</span></div>;
+  return <div className="client-logo wow-logo"><img src={wowDetailingLogo} alt="WOW Detailing"/></div>;
+};
 
 export default function App() { return <>
   <Header/><main id="main">
@@ -22,7 +30,7 @@ export default function App() { return <>
 
     <section className="section why"><div className="container why-grid"><div><SectionHead eyebrow="Why CloudInfy" title={<>Good partners leave you <em>stronger.</em></>}/><p>We pair practical engineering with thoughtful collaboration, giving your team the confidence to own what we build together.</p></div><div className="why-list">{['Business-first discovery','Scalable, secure architecture','Transparent communication','Quality-led delivery','Knowledge transfer and adoption','Responsive post-launch support'].map((x,i)=><div key={x}><span>{i+1}</span><h3>{x}</h3><Check/></div>)}</div></div></section>
 
-    <section className="section clients" id="clients"><div className="container"><SectionHead eyebrow="Our clients" title={<>Trusted to solve what’s <em>next.</em></>} text="Organizations featured on CloudInfy’s original company website."/><div className="client-grid">{clients.map(c=><div className="client-card" key={c.name}><strong>{c.mark}</strong><span>{c.name}</span></div>)}</div></div></section>
+    <section className="section clients" id="clients"><div className="container"><SectionHead eyebrow="Our clients" title={<>Trusted to solve what’s <em>next.</em></>} text="Organizations featured on CloudInfy’s original company website."/><div className="client-marquee"><div className="client-track">{[...clients,...clients].map((c,index)=><div className="client-card" key={`${c.name}-${index}`} aria-label={c.name} aria-hidden={index >= clients.length}><ClientLogo type={c.logo}/></div>)}</div></div></div></section>
 
     <section className="section testimonials"><div className="container"><div className="testimonial-intro"><SectionHead eyebrow="Partnership mindset" title={<>The experience matters as much as the <em>solution.</em></>}/><p className="placeholder-note">Sample testimonial copy—replace with approved customer quotes before launch.</p></div><div className="quote-grid">{testimonials.map((t,i)=><figure key={i}><Quote/><blockquote>“{t.quote}”</blockquote><figcaption><strong>{t.name}</strong><span>{t.role}</span></figcaption></figure>)}</div></div></section>
 
