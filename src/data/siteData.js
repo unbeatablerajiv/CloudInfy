@@ -28,6 +28,6 @@ export const clients = [
 
 // Placeholder copy: replace with approved customer quotes before publishing as testimonials.
 export const testimonials = [
-  { quote: 'CloudInfy brought clarity to a complex process and translated it into a solution our teams could adopt with confidence.', name: 'Sample client quote', role: 'Operations leader' },
+  { quote: 'CloudInfy created a website that represents our detailing brand with the quality and confidence we want every customer to experience. They also built Salesforce solutions that give us a clearer way to manage enquiries, follow-ups, and customer relationships. The whole experience was professional, responsive, and genuinely focused on helping WOW Detailing Studio grow.', name: 'Achyut Kishor', role: 'Founder, WOW Detailing Studio' },
   { quote: 'The team stayed close to the business outcome—not just the technical build—and communicated clearly from start to finish.', name: 'Sample client quote', role: 'Technology leader' },
 ];
