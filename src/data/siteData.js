@@ -23,6 +23,7 @@ export const clients = [
   { name: 'Clarity Consulting Group', mark: 'CCG' },
   { name: 'iTech Software Solutions', mark: 'iT' },
   { name: 'VYMO', mark: 'VYMO' },
+  { name: 'WOW', mark: 'WOW' },
 ];
 
 // Placeholder copy: replace with approved customer quotes before publishing as testimonials.
