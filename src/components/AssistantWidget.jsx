@@ -1,6 +1,7 @@
-import { Bot, MessageCircle, Send, X } from 'lucide-react';
+import { MessageCircle, Send, X } from 'lucide-react';
 import { useState } from 'react';
 import { salesforceOverviewSource, salesforceProducts } from '../data/salesforceKnowledge';
+import cloudinfyFavicon from '../assets/cloudinfy-favicon.png';
 
 function answerFor(question) {
   const message = question.toLowerCase();
@@ -26,7 +27,7 @@ export default function AssistantWidget() {
 
   return <aside className={`assistant-widget ${open ? 'is-open' : ''}`} aria-label="CloudInfy virtual assistant">
     {open && <section className="assistant-panel" aria-live="polite">
-      <header className="assistant-header"><span className="assistant-avatar"><Bot size={19}/></span><div><strong>CloudInfy assistant</strong><small><i/> Available to help</small></div><button onClick={() => setOpen(false)} aria-label="Close assistant"><X size={18}/></button></header>
+      <header className="assistant-header"><span className="assistant-avatar"><img src={cloudinfyFavicon} alt="CloudInfy"/></span><div><strong>CloudInfy Assistant</strong><small><i/> Available to help</small></div><button onClick={() => setOpen(false)} aria-label="Close assistant"><X size={18}/></button></header>
       <div className="assistant-messages">{messages.map((message, index) => <div className={`assistant-message ${message.role}`} key={`${message.role}-${index}`}>{message.text}</div>)}</div>
       <div className="assistant-compose"><input value={input} onChange={(event) => setInput(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') send(); }} placeholder="Ask a question…" aria-label="Ask the assistant"/><button onClick={() => send()} aria-label="Send message"><Send size={17}/></button></div>
       <a className="assistant-handoff" href="https://wa.me/918197299055" target="_blank" rel="noreferrer"><MessageCircle size={15}/> Talk to a Salesforce expert on WhatsApp</a>
