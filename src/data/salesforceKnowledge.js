@@ -1,0 +1,13 @@
+export const salesforceProducts = [
+  { name: 'Agentforce', terms: ['agentforce', 'ai agent', 'agentic', 'digital labour', 'digital labor'], summary: 'Agentforce is Salesforce’s platform for building, deploying, and governing AI agents. CloudInfy can help identify a valuable use case, design guardrails, and connect agents to the right business processes.' },
+  { name: 'Data 360', terms: ['data 360', 'data cloud', 'data silo', 'unify data', 'customer data'], summary: 'Data 360 brings together data from across systems to create trusted business context. It is a strong fit when teams need a more complete customer view or data foundation for AI.' },
+  { name: 'Customer 360', terms: ['customer 360', '360 view', 'customer view'], summary: 'Customer 360 connects Salesforce apps across the customer journey. It helps sales, service, marketing, commerce, and operations work from a more connected view of the customer.' },
+  { name: 'Sales', terms: ['sales cloud', 'sales', 'pipeline', 'lead', 'opportunity', 'revenue'], summary: 'Sales capabilities support lead management, opportunity tracking, forecasting, and revenue processes. CloudInfy can tailor the data model, stages, automation, and reporting to your sales motion.' },
+  { name: 'Service', terms: ['service cloud', 'service', 'case', 'support desk', 'customer support'], summary: 'Service capabilities help teams manage cases, routing, knowledge, and customer support workflows. CloudInfy can design a service operation that is easier to manage and scale.' },
+  { name: 'Marketing and Commerce', terms: ['marketing', 'commerce', 'campaign', 'ecommerce'], summary: 'Salesforce also supports connected marketing and commerce experiences. The right starting point depends on where customer data, campaigns, and buying journeys are currently fragmented.' },
+  { name: 'MuleSoft', terms: ['mulesoft', 'integration', 'api', 'connect system', 'erp'], summary: 'MuleSoft is Salesforce’s integration and API platform. CloudInfy can help connect Salesforce with ERP, finance, support, and other business systems through a practical integration strategy.' },
+  { name: 'Tableau', terms: ['tableau', 'analytics', 'dashboard', 'reporting', 'insight'], summary: 'Tableau helps teams explore data and act on insights. CloudInfy can pair useful dashboards with the right data definitions, governance, and operational workflows.' },
+  { name: 'Slack', terms: ['slack', 'collaboration'], summary: 'Slack can bring people, information, and Salesforce work into one place. It is useful when teams need faster collaboration around customer activity and operational decisions.' },
+];
+
+export const salesforceOverviewSource = 'https://www.salesforce.com/in/products/';
