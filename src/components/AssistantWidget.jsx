@@ -1,14 +1,6 @@
-import { Bot, ChevronDown, MessageCircle, Send, Sparkles, X } from 'lucide-react';
+import { Bot, MessageCircle, Send, X } from 'lucide-react';
 import { useState } from 'react';
 import { salesforceOverviewSource, salesforceProducts } from '../data/salesforceKnowledge';
-
-const quickQuestions = [
-  'Which service fits my needs?',
-  'What is Agentforce?',
-  'How can Salesforce unify our data?',
-  'How do you work with clients?',
-  'How do integrations work?',
-];
 
 function answerFor(question) {
   const message = question.toLowerCase();
@@ -32,18 +24,12 @@ export default function AssistantWidget() {
     setInput('');
   };
 
-  const contact = () => {
-    setOpen(false);
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return <aside className={`assistant-widget ${open ? 'is-open' : ''}`} aria-label="CloudInfy virtual assistant">
     {open && <section className="assistant-panel" aria-live="polite">
       <header className="assistant-header"><span className="assistant-avatar"><Bot size={19}/></span><div><strong>CloudInfy assistant</strong><small><i/> Available to help</small></div><button onClick={() => setOpen(false)} aria-label="Close assistant"><X size={18}/></button></header>
       <div className="assistant-messages">{messages.map((message, index) => <div className={`assistant-message ${message.role}`} key={`${message.role}-${index}`}>{message.text}</div>)}</div>
-      <div className="assistant-prompts">{quickQuestions.map((question) => <button key={question} onClick={() => send(question)}>{question}<ChevronDown size={14}/></button>)}</div>
       <div className="assistant-compose"><input value={input} onChange={(event) => setInput(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') send(); }} placeholder="Ask a question…" aria-label="Ask the assistant"/><button onClick={() => send()} aria-label="Send message"><Send size={17}/></button></div>
-      <button className="assistant-handoff" onClick={contact}><Sparkles size={15}/> Talk to a Salesforce expert</button>
+      <a className="assistant-handoff" href="https://wa.me/918197299055" target="_blank" rel="noreferrer"><MessageCircle size={15}/> Talk to a Salesforce expert on WhatsApp</a>
       <a className="assistant-source" href={salesforceOverviewSource} target="_blank" rel="noreferrer">Salesforce product overview ↗</a>
     </section>}
     <button className="assistant-launcher" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? 'Close CloudInfy assistant' : 'Open CloudInfy assistant'}>{open ? <X size={22}/> : <><MessageCircle size={22}/><span>Ask CloudInfy</span></>}</button>
