@@ -1,6 +1,7 @@
 import { ArrowRight, ArrowUpRight, Check, ChevronRight, CircleCheck, Mail, MapPin, Phone, Quote } from 'lucide-react';
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
+import AssistantWidget from './components/AssistantWidget';
 import { clients, services, solutions, testimonials } from './data/siteData';
 
 const Linkedin = () => <span aria-hidden="true" style={{fontWeight:800,fontSize:13}}>in</span>;
@@ -28,4 +29,5 @@ export default function App() { return <>
     <section className="section contact" id="contact"><div className="container contact-grid"><div className="contact-copy"><span className="eyebrow">Start a conversation</span><h2>Let’s make Salesforce work harder for your business.</h2><p>Tell us what you’re solving. We’ll bring a thoughtful point of view and a clear next step.</p><div className="contact-details"><a href="mailto:admin@cloudinfy.com"><Mail/>admin@cloudinfy.com</a><a href="tel:+918197299055"><Phone/>+91 81972 99055</a><address><MapPin/><span><strong>Singh Associates</strong><br/>1st Floor, Neori, Oyna<br/>Ranchi, Jharkhand 835217</span></address></div></div><ContactForm/></div></section>
   </main>
   <footer><div className="container footer-grid"><div><a className="brand light" href="#top"><span className="brand-mark"><i/><i/><i/></span><span>Cloud<span>Infy</span></span></a><p>Business-focused Salesforce consulting, implementation, development, and support.</p><a className="social" href="https://www.linkedin.com" aria-label="LinkedIn placeholder"><Linkedin/></a></div><div><h3>Explore</h3><a href="#about">About</a><a href="#services">Services</a><a href="#solutions">Solutions</a><a href="#clients">Clients</a></div><div><h3>Services</h3><a href="#services">Consulting</a><a href="#services">Implementation</a><a href="#services">Development</a><a href="#services">Support</a></div><div><h3>Get in touch</h3><a href="mailto:admin@cloudinfy.com">admin@cloudinfy.com</a><a href="tel:+918197299055">+91 81972 99055</a><address>Singh Associates<br/>1st Floor, Neori, Oyna<br/>Ranchi, Jharkhand 835217</address><a href="#contact">Start a project <ArrowUpRight size={14}/></a></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} CloudInfy Business Solutions LTD.</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+  <AssistantWidget/>
   </> }
