@@ -17,7 +17,7 @@ footer{background:#041222;color:#c3d0dc;padding:72px 0 25px}.footer-grid{display
 
 /* Unified dark theme */
 body{background:#061427;color:#eaf6ff}
-.brand{font-size:0;width:190px;height:52px;background:url('./assets/cloudinfy-logo-v2.png') center/contain no-repeat;display:block}
+.brand{font-size:0;width:190px;height:52px;background:url('./assets/cloudinfy-logo-growth-light.png') center/contain no-repeat;display:block}
 .brand>span{display:none}.brand.light{width:220px;height:60px}
 .about,.services,.solutions,.clients,.testimonials,.contact{background:#061427;color:#eaf6ff;position:relative}
 .about,.solutions,.clients,.contact{background:linear-gradient(180deg,#07172d 0%,#081b32 100%)}
@@ -107,3 +107,13 @@ footer{background:#0f172a;border-color:#334155}.footer-bottom{border-color:#3341
 .contact-details address{display:flex;align-items:flex-start;gap:12px;font-size:14px;font-style:normal;line-height:1.65}.contact-details address span{display:block}.contact-details address strong{color:#0f172a}
 .footer-grid address{color:#94a3b8;font-size:12px;font-style:normal;line-height:1.65;margin:10px 0 14px}
 @media(max-width:720px){.nav{background:#fff;color:#0f172a;border-color:#e2e8f0}.nav .btn{color:#fff}}
+
+/* Editorial, outcome-led layout */
+.site-header{position:absolute}.nav-wrap{border-bottom:1px solid rgba(255,255,255,.1)}
+.hero{min-height:870px;background:radial-gradient(circle at 78% 22%,rgba(50,135,255,.36),transparent 17%),radial-gradient(circle at 58% 80%,rgba(14,165,233,.14),transparent 28%),linear-gradient(135deg,#071327 0%,#0c2341 52%,#102b51 100%)}
+.hero:after{content:'';position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,rgba(1,10,25,.34));pointer-events:none}.hero-grid{min-height:700px;gap:72px}.hero-copy{position:relative;z-index:1}.hero h1{font-size:clamp(52px,6.1vw,82px);max-width:680px}.hero-copy>p{font-size:19px;line-height:1.65}.hero-proof{display:flex;gap:0;margin-top:43px;border:1px solid rgba(190,225,255,.18);border-radius:14px;width:max-content;max-width:100%;background:rgba(3,19,39,.28);overflow:hidden}.hero-proof div{padding:12px 22px;display:flex;flex-direction:column;gap:1px}.hero-proof div+div{border-left:1px solid rgba(190,225,255,.18)}.hero-proof strong{font:700 12px 'Manrope';color:#dff3ff}.hero-proof span{font-size:11px;color:#9db6cd}.hero-visual{z-index:1}.main-dash{border-radius:24px;box-shadow:0 38px 100px rgba(0,0,0,.38)}.side-dash{border-radius:18px}.hero-bottom{z-index:1}
+.section{padding:125px 0}.section-head h2{max-width:790px}.services-intro{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:54px}.services-intro .section-head{margin:0}.services-intro>.text-link{margin-bottom:16px;white-space:nowrap}.services .section-head h2{font-size:clamp(40px,5vw,62px)}
+.service-grid{gap:14px;border:0}.service-card{min-height:340px;border:1px solid #e1ebf5!important;border-radius:16px;padding:34px;box-shadow:0 8px 18px rgba(20,58,96,.025)}.service-card:hover{transform:translateY(-8px);box-shadow:0 24px 54px rgba(15,60,104,.13)}.service-card>svg{width:34px;height:34px;margin:38px 0 24px}.service-card h3{font-size:21px}.service-card p{line-height:1.65}.service-card a{opacity:1;bottom:29px}.service-no{font-weight:700}
+.about{position:relative;overflow:hidden}.about:after{content:'01';position:absolute;right:5%;bottom:-68px;font:800 220px/1 'Manrope';color:#f0f6fb;pointer-events:none}.about .split{position:relative;z-index:1}.solutions .section-head{margin-bottom:58px}.solution-card{padding:38px;border-radius:20px}.solution-card:hover{transform:translateX(8px);box-shadow:0 20px 48px rgba(15,60,104,.09)}.why{background:linear-gradient(130deg,#08192f,#102c4d)}.clients{padding-bottom:140px}.client-card{height:190px;border-radius:20px}.testimonials{background:linear-gradient(180deg,#f7fbff,#eef6fc)}.quote-grid figure{border-radius:22px}.contact{background:linear-gradient(135deg,#eaf5ff,#f8fbff)}
+@media(max-width:900px){.hero-grid{gap:34px}.services-intro{align-items:flex-start;flex-direction:column}.section{padding:95px 0}}
+@media(max-width:720px){.nav-wrap{border-bottom:0}.hero{min-height:1040px}.hero-proof{margin-top:32px}.hero-proof div{padding:11px 14px}.hero-proof strong{font-size:11px}.hero-proof span{font-size:10px}.section{padding:75px 0}.services-intro{gap:0;margin-bottom:36px}.services-intro>.text-link{margin:0}.service-card{min-height:300px}.about:after{font-size:130px;bottom:-42px}}
